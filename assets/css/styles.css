@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size:16px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%); border:hidden; width:70vw;
+    height: 8vh;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+body {
+   background-color: hsl(204, 43%, 93%) ;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   margin: 1rem 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#card {
+    background-color: #fff;
+    width: 80vw;
+    border-radius: 0.5rem;
+    border-radius: 5px;
+}
+
+header {padding:1rem;}
+header h1 {
+    color:hsl(179, 62%, 43%) ;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+header h2 {
+    color: hsl(71, 73%, 54%);
+    font-size:1.2rem;
+    margin: 0.5rem 0;
+}
+
+header p {
+    color:hsl(218, 22%, 67%);
+}
+
+article {background-color: hsl(179, 62%, 43%);
+    padding:1rem;}
+
+aside {
+    background-color: hsl(179, 80%, 43%); 
+    padding:1rem;
+}
+
+main {
+    color: #fff;
+}
+
+main h3 {font-size: 1.2rem; font-weight: 200; margin: 0.5rem 0;}
+
+main h4 {font-size: 2rem; display:flex; align-items: center;margin-bottom: 0.2rem;}
+
+small { font-size: 0.9rem; font-weight: 200;color:hsl(204, 43%, 93%); margin-left:0.5rem;}
+
+main p {margin-bottom:2rem;}
+
+ul li {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+ul {margin: 0.5rem 0;}
+
+aside {border-radius: 0 0 5px 5px}
+
+@media screen and (min-width:550px) {
+
+    body {display:flex;flex-direction:column;justify-content:center;align-items:center; min-height: 100vh;}
+
+    
+
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    button {width: 100%;}
+
+    main article {border-radius: 0 0 0 5px;}
+
+    main aside {border-radius: 0 0 5px 0;}
+
+
+}
+
+@media screen and (min-width:800px) {
+    #card {max-width: 600px;}
+
+    header {padding:2rem;}
+    aside, article {padding:1rem 2rem;}
+}
